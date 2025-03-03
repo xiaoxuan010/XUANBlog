@@ -1,0 +1,11 @@
+article:
+  type: tech
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/assets/lxgw-wenkai-screen-webfont@1.7.0/style.css" media="all" />
+
+style:
+  font-family:
+    body: '"LXGW WenKai Screen",system-ui,"Microsoft Yahei","Segoe UI",-apple-system,Roboto,Ubuntu,"Helvetica Neue",Arial,"WenQuanYi Micro Hei",sans-serif'
+    logo: '"LXGW WenKai Screen",system-ui,"Microsoft Yahei","Segoe UI",-apple-system,Roboto,Ubuntu,"Helvetica Neue",Arial,"WenQuanYi Micro Hei",sans-serif'
