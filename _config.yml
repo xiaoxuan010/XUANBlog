@@ -42,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 synctax_highlighter: prismjs
@@ -104,3 +104,10 @@ theme: stellar
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+
+# hexo-renderer-markdown-it
+markdown:
+  images:
+    prepend_root: true
+    post_asset: true
