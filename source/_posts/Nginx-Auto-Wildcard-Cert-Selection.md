@@ -2,7 +2,10 @@
 # title: Nginx Auto Wildcard Cert Selection
 title: Nginx 自动选择通配符证书
 date: 2025-03-02 22:45:00
-tags: 运维
+tags: 
+  - DevOps
+  - Nginx 
+  - SSL
 ---
 
 ## TL;DR
