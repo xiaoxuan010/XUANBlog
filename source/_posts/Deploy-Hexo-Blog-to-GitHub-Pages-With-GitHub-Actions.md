@@ -1,5 +1,6 @@
 ---
 title: 使用 GtiHub Actions 自动将 Hexo 博客部署到 GitHub Pages，无需两个仓库
+excerpt: 无需两个仓库，无需配置 GitHub Token，无需配置复杂的 Git 操作，使用 GitHub 官方部署工作流，即可快速将 Hexo 博客部署到 GitHub Pages。
 date: 2025-03-03 19:26:18
 tags: 
   - DevOps
@@ -176,3 +177,58 @@ git push origin main
 在 GitHub 仓库的 `Actions` 页面查看工作流的执行情况，如果一切正常，您的 Hexo 博客应该已经部署到 GitHub Pages 上了。如果您之前没有为 GitHub Pages 配置自定义域名，您可以回到 `Settings` 页面的 `Pages` 部分查看和修改静态页面部署的网址。
 
 {% image github-actions-deploy-result.png 在您的 GitHub 仓库的 Actions 页面中，可以查看工作流的运行结果 %}
+
+## 优化部署速度
+
+通过将 `npm` 换用为 `yarn`，并启用依赖缓存，可以大幅加快博客的构建速度，本博客实测的构建速度可从51秒缩短到26秒甚至更短。
+
+注意，从 `npm` 迁移到 `yarn` 也需要在本地仓库进行一些更改，请参阅 [Yarn 文档](https://yarnpkg.com/getting-started) 了解如何使用 Yarn。
+
+```yaml .github/workflows/deploy.yml
+name: Deploy Hexo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.14.0'
+        cache: 'yarn'
+
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+
+    - name: Generate static files
+      run: yarn run build
+
+    - name: Upload static files as artifact
+      id: deployment
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: public
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment: 
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
