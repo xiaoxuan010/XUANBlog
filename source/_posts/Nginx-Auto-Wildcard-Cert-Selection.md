@@ -1,6 +1,7 @@
 ---
 # title: Nginx Auto Wildcard Cert Selection
 title: Nginx 自动选择通配符证书
+excerpt: 在 Nginx 中使用 map 模块，自动选择域名对应的通配符证书。
 date: 2025-03-02 22:45:00
 tags: 
   - DevOps
