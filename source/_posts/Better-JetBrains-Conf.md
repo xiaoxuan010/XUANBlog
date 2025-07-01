@@ -27,9 +27,9 @@ tags:
 
 打开 `Settings > Plugins > Installed` 页面，找到 `Chinese(Simplified)`，点击 `Enable` 启用，然后按照提示重启 IDE 即可。
 
-<!-- ![在 Settings 页面启用中文插件的截图](enable-chinese-plugin.png) -->
+<!-- ![在 Settings 页面启用中文插件的截图](enable-chinese-plugin.webp) -->
 
-{% image enable-chinese-plugin.png 在 Setting 页面启用中文插件 fancybox:true %}
+{% image enable-chinese-plugin.webp 在 Setting 页面启用中文插件 fancybox:true %}
 
 ### 2. 快捷键
 
@@ -37,10 +37,10 @@ tags:
 - 预期表现：将 DevEco 的快捷键改为 VSCode 的快捷键。
 
 1. 打开“设置 > 插件”页面，安装并启用 `VSCode Keymap` 插件。
-   {% image enable-vscode-keymap-plugin.png 安装并启用 VSCode Keymap 插件 fancybox:true %}
+   {% image enable-vscode-keymap-plugin.webp 安装并启用 VSCode Keymap 插件 fancybox:true %}
 
 2. 转到“设置 > 快捷键”页面，选择 `VSCode` 作为 Keymap。
-   {% image set-vscode-keymap.png 选择 VSCode 作为 Keymap width:380px fancybox:true %}
+   {% image set-vscode-keymap.webp 选择 VSCode 作为 Keymap width:380px fancybox:true %}
 
 3. 修改以下快捷键选项，使其更接近 VSCode 的编码体验：
    - 编辑器操作
@@ -62,16 +62,16 @@ tags:
 
 双击 {% kbd Shift %}，或按下 {% kbd Ctrl %} + {% kbd Shift %} + {% kbd P %}（如果已启用 `VSCode Keymap`），在搜索框中输入“平滑”，打开“平滑滚动选项”，关闭“动画平滑滚动”选项，确认。
 
-{% image set-scrolling.png 关闭“动画平滑滚动”选项 width:300px %}
+{% image set-scrolling.webp 关闭“动画平滑滚动”选项 width:300px fancybox:true %}
 
 ### 5. 注释符号位置
 
 - 默认表现：在之前使用 IntelliJ IDEA 编写 Java 代码，使用快捷键切换行注释时，默认的注释符号 `//` 的位置是在行首。
-- 预期表现：改为 VSCode 的风格，即将注释也对其当前块的缩进。
+- 预期表现：改为 VSCode 的风格，也就是将注释也对齐当前块的缩进。
 
 打开“设置 > 编辑器 > 代码样式”页面，选择需要更改风格的语言，在“代码生成”选项卡中取消勾选“第一列的行注释”“第一列的列注释”等选项，启用“在注释开始处添加空格”。
 
-{% image set-comment-style.png 调整注释符号样式 %}
+{% image set-comment-style.webp 调整注释符号样式 fancybox:true %}
 
 ### 6. 注释行为
 
@@ -80,4 +80,13 @@ tags:
 
 打开“设置 > 高级设置”页面，搜索并关闭“使用行注释操作在注释后向下移动光标”选项。
 
-{% image disable-cursor-moving-option.png 关闭“使用行注释操作在注释后向下移动光标”选项 width:380px %}
+{% image disable-cursor-moving-option.webp 关闭“使用行注释操作在注释后向下移动光标”选项 width:380px fancybox:true %}
+
+### 7. 鼠标滚轮缩放代码
+
+- 默认表现：不响应鼠标滚轮缩放代码。
+- 预期表现：启用鼠标滚轮缩放代码。
+
+打开“设置 > 编辑器 > 常规”页面，在“鼠标控制”一栏中勾选启用“使用Ctrl + 鼠标滚轮 更改字体大小”。
+
+{% image editor-mouse-control-settings.webp 编辑器鼠标控制设置 fancybox:true %}
