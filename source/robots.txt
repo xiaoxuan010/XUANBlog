@@ -1,0 +1,10 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /about
+Disallow: /assets
+Disallow: /css
+Disallow: /js
+
+Sitemap: https://blog.xiaoxuan010.top/sitemap.xml
