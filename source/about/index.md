@@ -21,7 +21,7 @@ Student at the [School of Artificial Intelligence, SCNU](http://ai.scnu.edu.cn/)
 
 A backend service for the EEG4ASD project, built with Spring Boot and MySQL. It provides RESTful APIs for user management, file/data handling, and deep learning model integration. It uses JWT authentication, role-based access control, and a RabbitMQ message queue to connect the Java backend with Python services for EEG data analysis.
 
-Public [API documentation](https://apidoc.astralbridge.space/) supports frontend development.
+I implemented the entire backend, including primary architecture design, [API design](https://apidoc.astralbridge.space/), database schema design, and DevOps server maintenance.
 
 Initial development: August 2024.
 
@@ -31,7 +31,7 @@ Initial development: August 2024.
 
 Dry Helper is a single-page app built with Vue 3 and TypeScript, following Material Design 3 principles. It includes a [3D interactive map](https://dry-helper.xiaoxuan010.top/#/map) to visualize atmospheric moisture and explore humidity patterns over time. Three.js powers real-time 3D rendering and smooth layer animations.
 
-Initial development: April 2024.
+Initial development: March 2024.
 
 ## Open Source Contributions
 
@@ -51,4 +51,4 @@ BilibiliSponsorBlock is a community-driven project that lets users skip advertis
 
 ## Future
 
-I'm enthusiastic about providing high-quality software solutions for everyone, and help people who are in need in real-world scenarios. I'll be happy to join if you are also passionate about fighting for all the beauties.
+I'm enthusiastic about providing useful softwares for everyone, and help people who are in need in real-world scenarios. I'll be happy to join if you are also passionate about fighting for all the beauties in the world.
