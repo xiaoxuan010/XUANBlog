@@ -13,3 +13,8 @@ style:
 data_services:
   siteinfo:
     api: https://site-info-api.xiaoxuan010.top/api/v1?url={href}
+
+canonical:
+  originalHost: blog.xiaoxuan010.top
+  officialHosts: 
+    - ghpages.blog.xiaoxuan010.top
