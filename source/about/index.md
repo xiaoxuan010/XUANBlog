@@ -11,7 +11,8 @@ Student at the [School of Artificial Intelligence, SCNU](http://ai.scnu.edu.cn/)
 
 ## Skills
 
-![My Skills](https://skillicons.dev/icons?perline=14&i=idea,vscode,git,github,githubactions,linux,arduino,bash,docker,vercel,c,cpp,cmake,cloudflare,html,css,md,svg,js,ts,threejs,vite,vue,vuetify,nodejs,yarn,express,regex,py,pytorch,java,spring,nginx,mysql,mongodb,postgres,redis,sqlite,rabbitmq,ps,ai,pr,ae,au)
+<!-- ![My Skills](https://skillicons.dev/icons?perline=14&i=idea,vscode,git,github,githubactions,linux,arduino,bash,docker,vercel,c,cpp,cmake,cloudflare,html,css,md,svg,js,ts,threejs,vite,vue,vuetify,nodejs,yarn,express,regex,py,pytorch,java,spring,nginx,mysql,mongodb,postgres,redis,sqlite,rabbitmq,vim,ps,ai,pr,ae,au) -->
+![My Skills](/about/skillicons.svg)
 
 ## Projects
 
