@@ -20,11 +20,11 @@ Student at the [School of Artificial Intelligence, SCNU](http://ai.scnu.edu.cn/)
 
 {% link https://github.com/xiaoxuan010/eeg4asd-backend %}
 
-A backend service for the EEG4ASD project, built with Spring Boot and MySQL. It provides RESTful APIs for user management, file/data handling, and deep learning model integration. It uses JWT authentication, role-based access control, and a RabbitMQ message queue to connect the Java backend with Python services for EEG data analysis.
+A backend service for the EEG4ASD project, built with Spring Boot and MySQL. It provides RESTful APIs for user management, file/data handling, and deep learning model integration. It uses JWT authentication, role-based access control, and a RabbitMQ message queue to connect the Java backend with Python services for EEG data analysis. Besides, we also implemented integration with AliCloud LLM services for AI report generation.
 
 I implemented the entire backend, including primary architecture design, [API design](https://apidoc.astralbridge.space/), database schema design, and DevOps server maintenance.
 
-Initial development: August 2024.
+Initial development: August 2024. This backend was part of the _Brain-Computer Interface Assistive Medical System for Autism Integrating Temporal-Spatial Perception and Spatio-Temporal Frequency Domain Information_ project (No.T244412IY), which won the third prize in the Guangdong Provincial Competition of the 19th Cross-Strait and Hong Kong, Macao College Students' Computer Innovation Competition (2024).
 
 ### Dry Helper (Frontend)
 
